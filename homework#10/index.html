@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа на тему стили</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Информация о контрактах</h2>
+        <div class="contract-form">
+            <input onchange="checkInput()" type="text" class="contract-input" id="contractInput1">
+            <br>
+            <input onchange="checkInput()" type="text" class="contract-input" id="contractInput2">
+            <br>
+            <input onchange="checkInput()" type="text" class="contract-input" id="contractInput3">
+            <br>
+            <input onchange="checkInput()" type="text" class="contract-input" id="contractInput4">
+            <br>
+            <input onchange="checkInput()" type="text" class="contract-input" id="contractInput5">
+            <br>
+            <button onclick="addcontract()" class="contract-button" id="contractBtn" disabled>Добавить</button>
+        </div>
+        <ul class="contract-list" id="contractList"></ul>
+    </div>
+</body>
+</html>

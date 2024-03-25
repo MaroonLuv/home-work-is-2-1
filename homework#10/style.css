@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #111;
+    --color-blue: #30d5c8;
+    --color-haki: #806b2a;
+    --color-cobalt: #0047ab;
+    --font-sans: sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-black);
+    color: var(--color-blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 70px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 52px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.contract-form {
+    display: flex;
+    gap: 5px;
+}
+
+.contract-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--color-cobalt);
+    color: var(--color-haki);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.contract-button {
+    background-color: var(--color-cobalt);
+    color: var(--color-blue);
+    border: none;
+    padding-inline: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contract-button:disabled {
+    cursor: default;
+    opacity: .5;
+}
